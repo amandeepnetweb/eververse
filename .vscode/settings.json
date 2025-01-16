@@ -23,5 +23,14 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "tailwindCSS.experimental.configFile": "./packages/tailwind-config/tailwind.config.ts"
+  "tailwindCSS.experimental.configFile": "./packages/tailwind-config/tailwind.config.ts",
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
